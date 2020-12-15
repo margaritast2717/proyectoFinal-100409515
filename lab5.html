@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+<link rel="stylesheet" href="estilo.css" type="text/css" media="screen, projection" />
+<style>
+    
+#principal{
+	
+	padding:10px 10px 10px 50px;
+	background-color: rgb(38, 141, 209);	
+	box-shadow: 10px 10px 5px 0px #999999;
+	border-radius: 10px;
+}
+
+td{
+	padding-bottom:25px;
+}
+h1{
+	text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+		
+        $("#form_datos").validate();
+                
+            
+    });
+    </script>
+<h1>formulario</h1>
+<div id="contenedor">
+<form id="form_datos">
+  <table width="25%" border="0" align="center" id="principal">
+    <tr>
+      <td>Nombre:</td>
+      <td><label for="nombre"></label>
+        <input type="text" name="nombre" id="nombre" class="required" title="Este Campo es Obligatorio"></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><input type="text" name="apellidos" id="apellidos" class="required" title="Este Campo es Obligatorio"></td>
+    </tr>
+    <tr>
+      <td>Empresa donde labora:</td>
+      <td><label for="empresa"></label>
+        <input type="text" name="empresa" id="empresa" class="required" title="Este Campo es Obligatorio" ></td>
+    </tr>
+    <tr>
+      <td>Telefono movil:</td>
+      <td><input name="telMovil" type="telMovil" id="telMovil" class="required" title="Este Campo es Obligatorio" ></td>
+    </tr>
+
+    <tr>
+        <td>Telefono Hogar:</td>
+        <td><input name="telHogar" type="telHogar" id="telHogar" ></td>
+      </tr>
+
+    <tr>
+      <td>Correo Institucional:</td>
+      <td><label for="c_institucional"></label>
+        <input type="text" name="c_institucional" id="c_institucional" class="required" title="Este Campo es Obligatorio"></td>
+    </tr>
+    <tr>
+      <td>Correo Institucional donde labora:</td>
+      <td><label for="c_labora"></label>
+        <input type="text" name="c_labora" id="c_labora" ></td>
+    </tr>
+    
+     
+    <tr>
+    <td colspan="2" align="center"><input type="submit" value="Enviar" id="comprobar"></td>
+   
+    </tr>
+  </table>
+  </form>
+</div>
+
+
+<script src="codigo.js"></script>
+<script src="http://jeromeetienne.github.io/jquery-qrcode/src/qrcode.js"></script>
+</body>
+</html>
